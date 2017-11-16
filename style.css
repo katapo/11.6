@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700,900');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #E0E0E0;
+	font-family: 'Titillium Web', sans-serif;
+	color: #3D3D3D;
+}
+
+.column-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 900;
+	color: rgb(3, 52, 89);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.column h2 {
+	position: static;
+	font-size: 30px;
+	font-weight: 700;
+	color: rgb(3, 52, 89);
+	background-color: white;
+	border: rgb(3, 52, 89);
+	border-width: 2px;
+	border-style: solid;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0 0 10px 0;
+}
+
+.create-column {
+	position: absolute;
+	text-align: center;
+	left: 30px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+	background-color: rgb(3, 52, 89);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	margin: : 30px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.column {
+	position: relative;
+	display: inline-block;
+	width: 25%;
+	text-align: center;
+	border: none;
+	margin: 30px;
+}
+
+
+.btn-delete-column {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+	color: rgb(3, 52, 89);
+	background-color: white;
+	border: rgb(3, 52, 89);
+	border-width: 2px;
+	border-style: solid;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+ul {
+	display: block;
+	padding: 0;
+}
+
+li {
+	text-align: center;
+}
+
+.add-card {
+	font-size: 15px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(3, 52, 89);
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	text-align: center;
+	border-radius: 5px;
+	width: 150px;
+	cursor: pointer;
+}
+
+.card {
+	background-color: white;
+	color: rgb(3, 52, 89);
+	border-radius: 4px;
+	width: 150px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.btn-delete-card {
+	margin-top: 8px;
+	font-size: 15px;
+	font-family: 'Titillium Web', sans-serif;
+	color: rgb(3, 52, 89);
+	border-style: solid;
+	text-align: center;
+	border-radius: 2px;
+	padding: 0 8px;
+}
+
+.card-placeholder {
+	list-style-type: none;
+	border: 2px dotted grey ;
+	height: 20px;
+	border-radius: 4px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+}
