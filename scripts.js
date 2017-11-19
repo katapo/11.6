@@ -28,7 +28,11 @@ $(function() {
 			});
 
 			$columnAddCard.click(function() {
-				self.addCard(new Card(prompt("Enter the name of the card")));
+				var input;
+				input = self.addCard(new Card(prompt("Enter the name of the card")));
+				if (input === null) {
+                    return;
+                }
 			});
 
 			$column.append($columnTitle)
