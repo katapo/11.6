@@ -28,10 +28,10 @@ $(function() {
 			});
 
 			$columnAddCard.click(function() {
-				var input;
-				input = self.addCard(new Card(prompt("Enter the name of the card")));
-				if (input === null) {
-                    return;
+				var name;
+				name = prompt('Enter the name of the card');
+				if (name != null) {
+                	self.addCard(new Card(name));
                 }
 			});
 
@@ -105,11 +105,10 @@ $(function() {
 		}).disableSelection();
 	}
 
-	$('.create-column')
-		.click(function(){
+	$('.create-column').click(function(){
 		var name = prompt('Enter a column name');
 		var column = new Column(name);
-			board.addColumn(column);
+		board.addColumn(column);
 		});
 
 	var todoColumn = new Column('To do');
