@@ -12,7 +12,7 @@ $(function() {
 		var self = this;
 
 		this.id = randomString();
-		this.name = name;
+		this.name = name || 'no name';
 		this.$element = createColumn();
 
 
@@ -28,8 +28,7 @@ $(function() {
 			});
 
 			$columnAddCard.click(function() {
-				var name;
-				name = prompt('Enter the name of the card');
+				var name = prompt('Enter the name of the card');
 				if (name != null) {
                 	self.addCard(new Card(name));
                 }
@@ -57,7 +56,7 @@ $(function() {
 		var self = this;
 
 		this.id = randomString();
-		this.description = description;
+		this.description = description || 'no description';
 		this.$element = createCard();
 
 		function createCard() {
@@ -107,8 +106,10 @@ $(function() {
 
 	$('.create-column').click(function(){
 		var name = prompt('Enter a column name');
+			if (name != null) {
 		var column = new Column(name);
 		board.addColumn(column);
+			}
 		});
 
 	var todoColumn = new Column('To do');
